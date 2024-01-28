@@ -1,0 +1,770 @@
+function loadGui()
+	local function disableOverload()
+		local plr = game:GetService("Players").LocalPlayer
+		local plrGui = plr.PlayerGui
+		plrGui.ResetPlayerGuiOnSpawn = false
+	end
+	local insomnia = Instance.new("ScreenGui")
+	local AfBcG = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local UIGradient = Instance.new("UIGradient")
+	local version = Instance.new("TextLabel")
+	local picker = Instance.new("Frame")
+	local btnp = Instance.new("TextButton")
+	local btnv = Instance.new("TextButton")
+	local btnw = Instance.new("TextButton")
+	local btnh = Instance.new("TextButton")
+	local h_f = Instance.new("Frame")
+	local title = Instance.new("TextLabel")
+	local abt = Instance.new("ScrollingFrame")
+	local TextLabel = Instance.new("TextLabel")
+	local TextLabel_2 = Instance.new("TextLabel")
+	local user = Instance.new("TextLabel")
+	local yas = Instance.new("TextLabel")
+	local p_f = Instance.new("Frame")
+	local ws = Instance.new("TextBox")
+	local jp = Instance.new("TextBox")
+	local ej = Instance.new("TextButton")
+	local nc = Instance.new("TextButton")
+	local gm = Instance.new("TextButton")
+	local v_f = Instance.new("Frame")
+	local fb = Instance.new("TextButton")
+	local iz = Instance.new("TextButton")
+	local w_f = Instance.new("Frame")
+	local TextLabel_3 = Instance.new("TextLabel")
+	local title_2 = Instance.new("TextLabel")
+	local notif = Instance.new("Frame")
+	local UIGradient_2 = Instance.new("UIGradient")
+	local UICorner_2 = Instance.new("UICorner")
+	local nttext = Instance.new("TextLabel")
+	local thtext = Instance.new("TextLabel")
+
+	insomnia.Name = "insomnia"
+	insomnia.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+	insomnia.DisplayOrder = 999999999
+	insomnia.ResetOnSpawn = false
+
+	AfBcG.Name = "AfBcG"
+	AfBcG.Parent = insomnia
+	AfBcG.Active = true
+	AfBcG.AnchorPoint = Vector2.new(0.5, 0.5)
+	AfBcG.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	AfBcG.BackgroundTransparency = 0.200
+	AfBcG.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	AfBcG.BorderSizePixel = 0
+	AfBcG.Position = UDim2.new(0.499515504, 0, 0.5, 0)
+	AfBcG.Size = UDim2.new(0, 544, 0, 409)
+	AfBcG.ZIndex = 999999999
+
+	UICorner.Parent = AfBcG
+
+	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(25, 25, 25)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(48, 48, 48))}
+	UIGradient.Parent = AfBcG
+
+	version.Name = "version"
+	version.Parent = AfBcG
+	version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	version.BackgroundTransparency = 1.000
+	version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	version.BorderSizePixel = 0
+	version.Position = UDim2.new(0.871690452, 0, 0.946175635, 0)
+	version.Size = UDim2.new(0, 71, 0, 13)
+	version.ZIndex = 999999999
+	version.Font = Enum.Font.FredokaOne
+	version.Text = "v0.0.1"
+	version.TextColor3 = Color3.fromRGB(255, 255, 255)
+	version.TextScaled = true
+	version.TextSize = 14.000
+	version.TextWrapped = true
+
+	picker.Name = "picker"
+	picker.Parent = AfBcG
+	picker.AnchorPoint = Vector2.new(0.5, 0.5)
+	picker.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+	picker.BackgroundTransparency = 1.000
+	picker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	picker.BorderSizePixel = 0
+	picker.Position = UDim2.new(0.140656829, 0, 0.506373942, 0)
+	picker.Size = UDim2.new(0, 125, 0, 262)
+	picker.ZIndex = 999999999
+
+	btnp.Name = "btnp"
+	btnp.Parent = picker
+	btnp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	btnp.BackgroundTransparency = 1.000
+	btnp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	btnp.BorderSizePixel = 0
+	btnp.Position = UDim2.new(-0.0365097672, 0, 0.131930694, 0)
+	btnp.Size = UDim2.new(0, 124, 0, 36)
+	btnp.ZIndex = 999999999
+	btnp.Font = Enum.Font.FredokaOne
+	btnp.Text = "Player"
+	btnp.TextColor3 = Color3.fromRGB(255, 255, 255)
+	btnp.TextScaled = true
+	btnp.TextSize = 14.000
+	btnp.TextWrapped = true
+
+	btnv.Name = "btnv"
+	btnv.Parent = picker
+	btnv.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	btnv.BackgroundTransparency = 1.000
+	btnv.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	btnv.BorderSizePixel = 0
+	btnv.Position = UDim2.new(-0.0365097672, 0, 0.271494985, 0)
+	btnv.Size = UDim2.new(0, 124, 0, 36)
+	btnv.ZIndex = 999999999
+	btnv.Font = Enum.Font.FredokaOne
+	btnv.Text = "Visual"
+	btnv.TextColor3 = Color3.fromRGB(255, 255, 255)
+	btnv.TextScaled = true
+	btnv.TextSize = 14.000
+	btnv.TextWrapped = true
+
+	btnw.Name = "btnw"
+	btnw.Parent = picker
+	btnw.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	btnw.BackgroundTransparency = 1.000
+	btnw.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	btnw.BorderSizePixel = 0
+	btnw.Position = UDim2.new(-0.0358166508, 0, 0.411059201, 0)
+	btnw.Size = UDim2.new(0, 124, 0, 36)
+	btnw.ZIndex = 999999999
+	btnw.Font = Enum.Font.FredokaOne
+	btnw.Text = "World"
+	btnw.TextColor3 = Color3.fromRGB(255, 255, 255)
+	btnw.TextScaled = true
+	btnw.TextSize = 14.000
+	btnw.TextWrapped = true
+
+	btnh.Name = "btnh"
+	btnh.Parent = picker
+	btnh.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	btnh.BackgroundTransparency = 1.000
+	btnh.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	btnh.BorderSizePixel = 0
+	btnh.Position = UDim2.new(-0.0358166508, 0, -0.00381679391, 0)
+	btnh.Size = UDim2.new(0, 124, 0, 36)
+	btnh.ZIndex = 999999999
+	btnh.Font = Enum.Font.FredokaOne
+	btnh.Text = "Home"
+	btnh.TextColor3 = Color3.fromRGB(255, 255, 255)
+	btnh.TextScaled = true
+	btnh.TextSize = 14.000
+	btnh.TextWrapped = true
+
+	h_f.Name = "h_f"
+	h_f.Parent = AfBcG
+	h_f.AnchorPoint = Vector2.new(0.5, 0.5)
+	h_f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	h_f.BackgroundTransparency = 1.000
+	h_f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	h_f.BorderSizePixel = 0
+	h_f.Position = UDim2.new(0.633401215, 0, 0.498583555, 0)
+	h_f.Size = UDim2.new(0, 360, 0, 352)
+	h_f.ZIndex = 999999999
+
+	title.Name = "title"
+	title.Parent = h_f
+	title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title.BackgroundTransparency = 1.000
+	title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	title.BorderSizePixel = 0
+	title.Position = UDim2.new(0.138888896, 0, 0, 0)
+	title.Size = UDim2.new(0, 254, 0, 48)
+	title.ZIndex = 999999999
+	title.Font = Enum.Font.FredokaOne
+	title.Text = "About Novera"
+	title.TextColor3 = Color3.fromRGB(255, 255, 255)
+	title.TextScaled = true
+	title.TextSize = 14.000
+	title.TextWrapped = true
+
+	abt.Name = "abt"
+	abt.Parent = h_f
+	abt.Active = true
+	abt.AnchorPoint = Vector2.new(0.5, 0.5)
+	abt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	abt.BackgroundTransparency = 1.000
+	abt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	abt.BorderSizePixel = 0
+	abt.Position = UDim2.new(0.433333337, 0, 0.322088063, 0)
+	abt.Size = UDim2.new(0, 314, 0, 126)
+	abt.ZIndex = 999999999
+	abt.CanvasSize = UDim2.new(0, 0, 0.699999988, 0)
+
+	TextLabel.Parent = abt
+	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.BackgroundTransparency = 1.000
+	TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel.BorderSizePixel = 0
+	TextLabel.Position = UDim2.new(0.23888889, 0, -0.0220065638, 0)
+	TextLabel.Size = UDim2.new(0, 200, 0, 50)
+	TextLabel.ZIndex = 999999999
+	TextLabel.Font = Enum.Font.FredokaOne
+	TextLabel.Text = "What is Novera?"
+	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel.TextScaled = true
+	TextLabel.TextSize = 14.000
+	TextLabel.TextWrapped = true
+
+	TextLabel_2.Parent = abt
+	TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.BackgroundTransparency = 1.000
+	TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	TextLabel_2.BorderSizePixel = 0
+	TextLabel_2.Position = UDim2.new(0.15237096, 0, 0.171683416, 0)
+	TextLabel_2.Size = UDim2.new(0, 260, 0, 84)
+	TextLabel_2.ZIndex = 999999999
+	TextLabel_2.Font = Enum.Font.FredokaOne
+	TextLabel_2.Text = "Novera is a \"hacking\" gui for Identity Fraud, Novera is made by \"_.stack\" in discord"
+	TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_2.TextScaled = true
+	TextLabel_2.TextSize = 14.000
+	TextLabel_2.TextWrapped = true
+
+	user.Name = "user"
+	user.Parent = h_f
+	user.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	user.BackgroundTransparency = 1.000
+	user.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	user.BorderSizePixel = 0
+	user.Position = UDim2.new(0.158333331, 0, 0.494318187, 0)
+	user.Size = UDim2.new(0, 241, 0, 99)
+	user.ZIndex = 999999999
+	user.Font = Enum.Font.FredokaOne
+	user.Text = "User: NeverUnplay2/st4ck"
+	user.TextColor3 = Color3.fromRGB(255, 255, 255)
+	user.TextScaled = true
+	user.TextSize = 14.000
+	user.TextWrapped = true
+
+	yas.Name = "yas"
+	yas.Parent = h_f
+	yas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	yas.BackgroundTransparency = 1.000
+	yas.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	yas.BorderSizePixel = 0
+	yas.Position = UDim2.new(-0.347222209, 0, 0.903409064, 0)
+	yas.Size = UDim2.new(0, 101, 0, 29)
+	yas.ZIndex = 999999999
+	yas.Font = Enum.Font.FredokaOne
+	yas.Text = "_.stack"
+	yas.TextColor3 = Color3.fromRGB(255, 255, 255)
+	yas.TextScaled = true
+	yas.TextSize = 14.000
+	yas.TextWrapped = true
+
+	p_f.Name = "p_f"
+	p_f.Parent = AfBcG
+	p_f.AnchorPoint = Vector2.new(0.5, 0.5)
+	p_f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	p_f.BackgroundTransparency = 1.000
+	p_f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	p_f.BorderSizePixel = 0
+	p_f.Position = UDim2.new(0.633401215, 0, 0.498583555, 0)
+	p_f.Size = UDim2.new(0, 360, 0, 352)
+	p_f.Visible = false
+	p_f.ZIndex = 999999999
+
+	ws.Name = "ws"
+	ws.Parent = p_f
+	ws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ws.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ws.BorderSizePixel = 0
+	ws.Position = UDim2.new(0.0361111127, 0, 0.0852272734, 0)
+	ws.Size = UDim2.new(0, 143, 0, 36)
+	ws.ZIndex = 999999999
+	ws.Font = Enum.Font.FredokaOne
+	ws.PlaceholderText = "Set your walkspeed"
+	ws.Text = ""
+	ws.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ws.TextScaled = true
+	ws.TextSize = 14.000
+	ws.TextWrapped = true
+
+	jp.Name = "jp"
+	jp.Parent = p_f
+	jp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	jp.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	jp.BorderSizePixel = 0
+	jp.Position = UDim2.new(0.0361111127, 0, 0.204545453, 0)
+	jp.Size = UDim2.new(0, 143, 0, 36)
+	jp.ZIndex = 999999999
+	jp.Font = Enum.Font.FredokaOne
+	jp.PlaceholderText = "Set your jump power"
+	jp.Text = ""
+	jp.TextColor3 = Color3.fromRGB(0, 0, 0)
+	jp.TextScaled = true
+	jp.TextSize = 14.000
+	jp.TextWrapped = true
+
+	ej.Name = "ej"
+	ej.Parent = p_f
+	ej.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	ej.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	ej.BorderSizePixel = 0
+	ej.Position = UDim2.new(0.486111104, 0, 0.0880681798, 0)
+	ej.Size = UDim2.new(0, 91, 0, 33)
+	ej.ZIndex = 999999999
+	ej.Font = Enum.Font.FredokaOne
+	ej.Text = "Enable Jump Power"
+	ej.TextColor3 = Color3.fromRGB(0, 0, 0)
+	ej.TextScaled = true
+	ej.TextSize = 14.000
+	ej.TextWrapped = true
+
+	nc.Name = "nc"
+	nc.Parent = p_f
+	nc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	nc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	nc.BorderSizePixel = 0
+	nc.Position = UDim2.new(0.486111104, 0, 0.20738636, 0)
+	nc.Size = UDim2.new(0, 91, 0, 33)
+	nc.ZIndex = 999999999
+	nc.Font = Enum.Font.FredokaOne
+	nc.Text = "Noclip(can get detected)"
+	nc.TextColor3 = Color3.fromRGB(0, 0, 0)
+	nc.TextScaled = true
+	nc.TextSize = 14.000
+	nc.TextWrapped = true
+
+	gm.Name = "gm"
+	gm.Parent = p_f
+	gm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	gm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	gm.BorderSizePixel = 0
+	gm.Position = UDim2.new(0.486111104, 0, 0.326704532, 0)
+	gm.Size = UDim2.new(0, 91, 0, 33)
+	gm.ZIndex = 999999999
+	gm.Font = Enum.Font.FredokaOne
+	gm.Text = "Godmode"
+	gm.TextColor3 = Color3.fromRGB(0, 0, 0)
+	gm.TextScaled = true
+	gm.TextSize = 14.000
+	gm.TextWrapped = true
+
+	v_f.Name = "v_f"
+	v_f.Parent = AfBcG
+	v_f.Active = true
+	v_f.AnchorPoint = Vector2.new(0.5, 0.5)
+	v_f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	v_f.BackgroundTransparency = 1.000
+	v_f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	v_f.BorderSizePixel = 0
+	v_f.Position = UDim2.new(0.633401215, 0, 0.498583555, 0)
+	v_f.Size = UDim2.new(0, 360, 0, 352)
+	v_f.Visible = false
+	v_f.ZIndex = 999999999
+
+	fb.Name = "fb"
+	fb.Parent = v_f
+	fb.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	fb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	fb.BorderSizePixel = 0
+	fb.Position = UDim2.new(0.0500000007, 0, 0.110795453, 0)
+	fb.Size = UDim2.new(0, 91, 0, 33)
+	fb.ZIndex = 999999999
+	fb.Font = Enum.Font.FredokaOne
+	fb.Text = "Fullbright"
+	fb.TextColor3 = Color3.fromRGB(0, 0, 0)
+	fb.TextScaled = true
+	fb.TextSize = 14.000
+	fb.TextWrapped = true
+
+	iz.Name = "iz"
+	iz.Parent = v_f
+	iz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	iz.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	iz.BorderSizePixel = 0
+	iz.Position = UDim2.new(0.36388889, 0, 0.110795453, 0)
+	iz.Size = UDim2.new(0, 91, 0, 33)
+	iz.ZIndex = 999999999
+	iz.Font = Enum.Font.FredokaOne
+	iz.Text = "Inf Zoom"
+	iz.TextColor3 = Color3.fromRGB(0, 0, 0)
+	iz.TextScaled = true
+	iz.TextSize = 14.000
+	iz.TextWrapped = true
+
+	w_f.Name = "w_f"
+	w_f.Parent = AfBcG
+	w_f.Active = true
+	w_f.AnchorPoint = Vector2.new(0.5, 0.5)
+	w_f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	w_f.BackgroundTransparency = 1.000
+	w_f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	w_f.BorderSizePixel = 0
+	w_f.Position = UDim2.new(0.633401215, 0, 0.498583555, 0)
+	w_f.Size = UDim2.new(0, 360, 0, 352)
+	w_f.Visible = false
+	w_f.ZIndex = 999999999
+
+	TextLabel_3.Parent = w_f
+	TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.BackgroundTransparency = 1.000
+	TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.BorderSizePixel = 0
+	TextLabel_3.Position = UDim2.new(0.100000001, 0, 0.34375, 0)
+	TextLabel_3.Size = UDim2.new(0, 254, 0, 111)
+	TextLabel_3.ZIndex = 999999999
+	TextLabel_3.Font = Enum.Font.FredokaOne
+	TextLabel_3.Text = "Nothing here cuz im lazy"
+	TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+	TextLabel_3.TextScaled = true
+	TextLabel_3.TextSize = 14.000
+	TextLabel_3.TextWrapped = true
+
+	title_2.Name = "title"
+	title_2.Parent = AfBcG
+	title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	title_2.BackgroundTransparency = 1.000
+	title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	title_2.BorderSizePixel = 0
+	title_2.Position = UDim2.new(0.0264765788, 0, 0.0126751903, 0)
+	title_2.Size = UDim2.new(0, 140, 0, 39)
+	title_2.ZIndex = 999999999
+	title_2.Font = Enum.Font.FredokaOne
+	title_2.Text = "NOVERA"
+	title_2.TextColor3 = Color3.fromRGB(0, 255, 238)
+	title_2.TextScaled = true
+	title_2.TextSize = 14.000
+	title_2.TextWrapped = true
+
+	notif.Name = "notif"
+	notif.Parent = insomnia
+	notif.AnchorPoint = Vector2.new(0.5, 0.5)
+	notif.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	notif.BackgroundTransparency = 0.300
+	notif.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	notif.BorderSizePixel = 0
+	notif.Position = UDim2.new(-3, 0, 0.774999976, 0)
+	notif.Size = UDim2.new(0, 208, 0, 87)
+	notif.ZIndex = 999999999
+
+	UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+	UIGradient_2.Parent = notif
+
+	UICorner_2.Parent = notif
+
+	nttext.Name = "nttext"
+	nttext.Parent = notif
+	nttext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	nttext.BackgroundTransparency = 1.000
+	nttext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	nttext.BorderSizePixel = 0
+	nttext.Position = UDim2.new(0.225961536, 0, 0, 0)
+	nttext.Size = UDim2.new(0, 114, 0, 33)
+	nttext.ZIndex = 999999999
+	nttext.Font = Enum.Font.FredokaOne
+	nttext.Text = "NOVERA"
+	nttext.TextColor3 = Color3.fromRGB(255, 255, 255)
+	nttext.TextScaled = true
+	nttext.TextSize = 14.000
+	nttext.TextWrapped = true
+
+	thtext.Name = "thtext"
+	thtext.Parent = notif
+	thtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	thtext.BackgroundTransparency = 1.000
+	thtext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	thtext.BorderSizePixel = 0
+	thtext.Position = UDim2.new(0, 0, 0.37931034, 0)
+	thtext.Size = UDim2.new(0, 208, 0, 40)
+	thtext.ZIndex = 999999999
+	thtext.Font = Enum.Font.FredokaOne
+	thtext.Text = "Text here"
+	thtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+	thtext.TextScaled = true
+	thtext.TextSize = 14.000
+	thtext.TextWrapped = true
+
+	-- Scripts:
+
+	local function UYLBLIO_fake_script() -- btnp.show 
+		local script = Instance.new('LocalScript', btnp)
+
+		local f = script.Parent.Parent.Parent
+		local h = f.h_f
+		local p = f.p_f
+		local v = f.v_f
+		local w = f.w_f
+		script.Parent.MouseButton1Click:Connect(function()
+			h.Visible = false
+			p.Visible = true
+			v.Visible = false
+			w.Visible = false
+		end)
+	end
+	coroutine.wrap(UYLBLIO_fake_script)()
+	local function MVJMBA_fake_script() -- btnv.show 
+		local script = Instance.new('LocalScript', btnv)
+
+		local f = script.Parent.Parent.Parent
+		local h = f.h_f
+		local p = f.p_f
+		local v = f.v_f
+		local w = f.w_f
+		script.Parent.MouseButton1Click:Connect(function()
+			h.Visible = false
+			p.Visible = false
+			v.Visible = true
+			w.Visible = false
+		end)
+	end
+	coroutine.wrap(MVJMBA_fake_script)()
+	local function NKMPWB_fake_script() -- btnw.show 
+		local script = Instance.new('LocalScript', btnw)
+
+		local f = script.Parent.Parent.Parent
+		local h = f.h_f
+		local p = f.p_f
+		local v = f.v_f
+		local w = f.w_f
+		script.Parent.MouseButton1Click:Connect(function()
+			h.Visible = false
+			p.Visible = false
+			v.Visible = false
+			w.Visible = true
+		end)
+	end
+	coroutine.wrap(NKMPWB_fake_script)()
+	local function ZLSB_fake_script() -- btnh.show 
+		local script = Instance.new('LocalScript', btnh)
+
+		local f = script.Parent.Parent.Parent
+		local h = f.h_f
+		local p = f.p_f
+		local v = f.v_f
+		local w = f.w_f
+		script.Parent.MouseButton1Click:Connect(function()
+			h.Visible = true
+			p.Visible = false
+			v.Visible = false
+			w.Visible = false
+		end)
+	end
+	coroutine.wrap(ZLSB_fake_script)()
+	local function GGOLH_fake_script() -- user.user 
+		local script = Instance.new('LocalScript', user)
+
+		local plr = game:GetService("Players").LocalPlayer
+		script.Parent.Text = "Username: "..plr.Name.."/"..plr.DisplayName
+	end
+	coroutine.wrap(GGOLH_fake_script)()
+	local function TFDOHZP_fake_script() -- ws.auto 
+		local script = Instance.new('LocalScript', ws)
+
+		local wsSet = script.Parent.Text
+		local plr = game:GetService("Players").LocalPlayer
+		local char = plr.Character
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		while true do
+			wait(3) -- check
+			hum.WalkSpeed = script.Parent.Text
+		end
+	end
+	coroutine.wrap(TFDOHZP_fake_script)()
+	local function WDUGPU_fake_script() -- jp.auto 
+		local script = Instance.new('LocalScript', jp)
+
+		local wsSet = script.Parent.Text
+		local plr = game:GetService("Players").LocalPlayer
+		local char = plr.Character
+		local hum = char:FindFirstChildOfClass("Humanoid")
+		while true do
+			wait(3) -- check
+			hum.JumpPower = script.Parent.Text
+		end
+	end
+	coroutine.wrap(WDUGPU_fake_script)()
+	local function TYJOSF_fake_script() -- ej.enable 
+		local script = Instance.new('LocalScript', ej)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local plr = game:GetService('Players').LocalPlayer
+			local char = plr.Character
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			hum.UseJumpPower = true
+		end)
+	end
+	coroutine.wrap(TYJOSF_fake_script)()
+	local function UASSJX_fake_script() -- nc.noclip 
+		local script = Instance.new('LocalScript', nc)
+
+		local plr = game:GetService('Players').LocalPlayer
+		local char = plr.Character
+		local Head = char:FindFirstChild("Head")
+		script.Parent.MouseButton1Click:Connect(function()
+			local function noclipping()
+				Head.Touched:Connect(function(hit)
+					if hit:IsA("Part", "MeshPart") then
+						if hit.CanCollide == true then
+							hit.CanCollide = false
+							wait(10)
+							hit.CanCollide = true
+						end
+					end
+				end)
+			end
+			noclipping()
+		end)
+	end
+	coroutine.wrap(UASSJX_fake_script)()
+	local function PGFI_fake_script() -- gm.god 
+		local script = Instance.new('LocalScript', gm)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local plr = game:GetService('Players').LocalPlayer
+			local char = plr.Character
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			hum.MaxHealth = 1E+100
+			hum.Health = hum.MaxHealth
+		end)
+	end
+	coroutine.wrap(PGFI_fake_script)()
+	local function OCIG_fake_script() -- fb.fb 
+		local script = Instance.new('LocalScript', fb)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local lighting = game:GetService("Lighting");
+			lighting.Ambient = Color3.fromRGB(255, 255, 255);
+			lighting.Brightness = 1;
+			lighting.FogEnd = 1e10;
+			for i, v in pairs(lighting:GetDescendants()) do
+				if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("ColorCorrectionEffect") or v:IsA("SunRaysEffect") then
+					v.Enabled = false;
+				end;
+			end;
+			lighting.Changed:Connect(function()
+				lighting.Ambient = Color3.fromRGB(255, 255, 255);
+				lighting.Brightness = 1;
+				lighting.FogEnd = 1e10;
+			end);
+			spawn(function()
+				local character = game:GetService("Players").LocalPlayer.Character;
+				while wait() do
+					repeat wait() until character ~= nil;
+					if not character.HumanoidRootPart:FindFirstChildWhichIsA("PointLight") then
+						local headlight = Instance.new("PointLight", character.HumanoidRootPart);
+						headlight.Brightness = 1;
+						headlight.Range = 60;
+					end;
+				end;
+			end);
+		end)
+	end
+	coroutine.wrap(OCIG_fake_script)()
+	local function CSLW_fake_script() -- iz.iz 
+		local script = Instance.new('LocalScript', iz)
+
+		script.Parent.MouseButton1Click:Connect(function()
+			local plr = game:GetService('Players').LocalPlayer
+			local char = plr.Character
+			local hum = char:FindFirstChildOfClass("Humanoid")
+			local inf = 1E+100
+			plr.CameraMaxZoomDistance = inf
+			plr.CameraMinZoomDistance = 1
+		end)
+	end
+	coroutine.wrap(CSLW_fake_script)()
+	local function GVCDKIB_fake_script() -- AfBcG.dragmaass 
+		local script = Instance.new('LocalScript', AfBcG)
+
+		local UserInputService = game:GetService("UserInputService")
+		local runService = (game:GetService("RunService"));
+
+		local gui = script.Parent
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		local function Lerp(a, b, m)
+			return a + (b - a) * m
+		end;
+
+		local lastMousePos
+		local lastGoalPos
+		local DRAG_SPEED = (8); -- // The speed of the UI darg.
+		local function Update(dt)
+			if not (startPos) then return end;
+			if not (dragging) and (lastGoalPos) then
+				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+				return 
+			end;
+
+			local delta = (lastMousePos - UserInputService:GetMouseLocation())
+			local xGoal = (startPos.X.Offset - delta.X);
+			local yGoal = (startPos.Y.Offset - delta.Y);
+			lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+		end;
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+				lastMousePos = UserInputService:GetMouseLocation()
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		runService.Heartbeat:Connect(Update)
+	end
+	coroutine.wrap(GVCDKIB_fake_script)()
+	local function RPVTKG_fake_script() -- insomnia._Safety 
+		local script = Instance.new('LocalScript', insomnia)
+
+		local char = game:GetService("Players").LocalPlayer.Character
+		char.Frigid:Destroy()
+		local plr = game:GetService("Players").LocalPlayer
+		plr.CameraMode = Enum.CameraMode.Classic
+		repeat wait() until game:IsLoaded()
+	end
+	coroutine.wrap(RPVTKG_fake_script)()
+	local function BHMUX_fake_script() -- insomnia.testantiAC 
+		local script = Instance.new('LocalScript', insomnia)
+
+		local plr = game:GetService("Players").LocalPlayer
+		local char = plr.Character
+		local frigid = Instance.new("LocalScript", char)
+		frigid.Name = "Frigid"
+	end
+	coroutine.wrap(BHMUX_fake_script)()
+	local function ECEBWHS_fake_script() -- insomnia.tp 
+		local script = Instance.new('LocalScript', insomnia)
+
+		local plr = game:GetService("Players").LocalPlayer
+		plr.CameraMode = Enum.CameraMode.Classic
+	end
+	coroutine.wrap(ECEBWHS_fake_script)()
+	local function UOKAOW_fake_script() -- thtext.text 
+		local script = Instance.new('LocalScript', thtext)
+
+		script.Parent.Text = "Novera is loaded! You can scroll out and drag the window! Set your walkspeed in Player so you can move."
+	end
+	coroutine.wrap(UOKAOW_fake_script)()
+	local function ODGAY_fake_script() -- notif._animateScript 
+		local script = Instance.new('LocalScript', notif)
+
+		local TweenService = game:GetService("TweenService")
+		script.Parent:TweenPosition(UDim2.new(0.9, 0,0.775, 0), Enum.EasingDirection.In, Enum.EasingStyle.Bounce)
+		wait(10)
+		script.Parent:TweenPosition(UDim2.new(-3, 0,0.775, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce)
+	end
+	coroutine.wrap(ODGAY_fake_script)()
+end
+loadGui()
