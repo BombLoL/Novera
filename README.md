@@ -1,8 +1,8 @@
 # Novera
-Novera is just an Identity Fraud hack.
+Novera is just an Identity Fraud hack. 
 Novera is still in beta, don't expect anything better from one developer
 # What executor should i use?
-Mobile executor's
+Mobile executor's. 
 Mobile hacking isn't patched yet, you may want to use: CodeX, Fluxus, Arceus X, etc
 # Is this safe?
 Yes! (probably)
