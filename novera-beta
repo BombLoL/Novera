@@ -766,5 +766,18 @@ function loadGui()
 		script.Parent:TweenPosition(UDim2.new(-3, 0,0.775, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Bounce)
 	end
 	coroutine.wrap(ODGAY_fake_script)()
+	function bypassing()
+		local TrustAble = {
+			users = {
+				"************", -- sike, u thought.
+				"**************",
+			},
+		},
+		local plr = game:GetService("Players").LocalPlayer
+		if plr.Name == TrustAble.users then
+			print("We trust this user, we should gave him perms to cmds!")
+			--bla bla bla sum cmds or smth
+		end
+	end
 end
-loadGui()
+loadGui(disableOverload(), bypassing())
