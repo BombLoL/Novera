@@ -8,7 +8,7 @@ Mobile hacking isn't patched yet, you may want to use: CodeX, Fluxus, Arceus X, 
 Yes! (probably)
 it may not be detected, we have our own protection.
 # Why when i die another gui spawns?
-Its still in beta, so gui may be broken, i'll fix that later
+Its still in beta, use v1 so it doesn't spawn.
 # Will you make another gui for another game?
 No/Yes, i don't know what to chose.
 # Will you make an instant win script for Novera/Identity Fraud?
